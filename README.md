@@ -68,19 +68,22 @@ The dataset acts as a proxy for real-world e-commerce review data.
 
 ## Architecture
 
+```text
 User Query
-↓
+   ↓
 Embedding Model
-↓
+   ↓
 FAISS Vector Database (Semantic Search)
-↓
+   ↓
 Top Relevant Reviews
-↓
+   ↓
 Prompt Construction
-↓
+   ↓
 Large Language Model
-↓
+   ↓
 Grounded Answer / Comparison
+```
+
 ---
 
 ## Core Components
@@ -118,11 +121,13 @@ Grounded Answer / Comparison
 ---
 
 ## Example Queries
+```text
+- What do people like about this product?
+- What are common complaints?
+- Is this product reliable?
+- Compare Product A and Product B
+```
 
-What do people like about this product?
-What are common complaints?
-Is this product reliable?
-Compare Product A and Product B
 ---
 
 ## Screenshots
@@ -173,3 +178,4 @@ Compare Product A and Product B
 ## Conclusion
 
 This project demonstrates how Retrieval-Augmented Generation can be applied to real-world product review analysis to generate **trustworthy, evidence-based insights** rather than hallucinated responses. It showcases an end-to-end GenAI system combining NLP, vector databases, and LLMs.
+
